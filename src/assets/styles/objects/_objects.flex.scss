@@ -1,0 +1,77 @@
+.o-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-flex__item {
+  flex: 0 1 auto;
+}
+
+.o-flex__item--flex {
+  display: flex;
+}
+
+.o-flex--nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Automatically size cells to fill whole available space
+   ========================================================================== */
+
+.o-flex--full {
+  & > .o-flex__item {
+    flex: 1 1 auto;
+  }
+}
+
+/* Automatically size cells by distributing them equally
+   ========================================================================== */
+
+.o-flex--auto {
+  & > .o-flex__item {
+    flex: 1 0 0;
+  }
+}
+
+/* Horizontal alignment
+   ========================================================================== */
+
+.o-flex--center {
+  justify-content: center;
+}
+
+.o-flex--right {
+  justify-content: flex-end;
+}
+
+.o-flex--left {
+  justify-content: flex-start;
+}
+
+
+/* Vertical alignment
+   ========================================================================== */
+
+.o-flex--middle {
+  align-items: center;
+}
+
+.o-flex--bottom {
+  align-items: flex-end;
+}
+
+
+/* Content distribution
+   ========================================================================== */
+
+.o-flex--around {
+  justify-content: space-around;
+}
+
+.o-flex--between {
+  justify-content: space-between;
+}
+
+.o-flex--reverse {
+  flex-direction: row-reverse;
+}
