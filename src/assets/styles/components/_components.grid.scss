@@ -5,7 +5,7 @@ $template-columns: 1fr 4fr 3fr 3fr 1fr;
   grid-template-columns: $template-columns;
   grid-column-gap: 1px;
 
-  &__section {
+  &-section {
     margin-top: 10rem;
     border-bottom: 1px solid $border-color;
     grid-column-start: 2;
@@ -28,8 +28,13 @@ $template-columns: 1fr 4fr 3fr 3fr 1fr;
 
     }
 
-    &-media {
+    &__media {
       grid-column: 2 / 4;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      margin-bottom: 0;
     }
   }
 }
@@ -56,12 +61,4 @@ $template-columns: 1fr 4fr 3fr 3fr 1fr;
       border-right: 1px solid $border-color;
     }
   }
-}
-
-
-
-
-
-.o-wrapper {
-  padding: 0;
 }
