@@ -6,6 +6,58 @@
     <link rel="stylesheet" href="./dist/assets/styles/main.css">
 </head>
 <body>
-<div>Hello MW website!</div>
+    <header class="c-page-header">
+        <a href="#" class="c-page-header__logo">
+            <svg class="c-page-header__logo-icon">
+                <use xlink:href="./dist/assets/images/icons.svg#mw-logo-horizontal"/>
+            </svg>
+        </a>
+        <nav class="c-page-header__nav c-main-nav">
+            <button>Menu</button>
+        </nav>
+    </header>
+    <div class="o-wrapper">
+        <main class="c-grid">
+            <section class="c-grid__section">
+                <div class="c-grid__section-content">
+                    <h1>Section title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, necessitatibus.</p>
+                </div>
+                <figure class="c-blob c-grid__section-media">
+                    <video loop autoplay muted class="c-blob__video">
+                        <source src="/dist/assets/videos/video.mp4" type="video/mp4">
+                    </video>
+                    <svg id="blob" class="c-blob__mask" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 261.9">
+                        <defs>
+                        <clipPath id="clip" clipPathUnits="objectBoundingBox" transform="scale(0.003875 0.003818)">
+                            <title>blob</title>
+                        <circle cx="138" cy="124.9" r="120"/>
+                            <ellipse cx="164.5" cy="156" rx="61.5" ry="34" transform="translate(-68.9 -94.14) rotate(-8.79)"/>
+                            <ellipse cx="167" cy="213.9" rx="42" ry="48"/><ellipse cx="68" cy="158.4" rx="68" ry="70.5"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </figure>
+            </section>
+            <section class="c-grid__section">
+                <div class="c-grid__section-content">
+                    <h1>Section title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, necessitatibus.</p>
+                </div>
+                <figure class="c-grid__section-media">
+                    <img src="src/assets/images/flowers.jpg" class=""/>
+                </figure>
+            </section>
+        </main>
+        <!-- Grid created for displaying vertical lines in proper positions on the webpage -->
+        <div class="c-faux-grid">
+            <div class="c-faux-grid__item"></div>
+            <div class="c-faux-grid__item"></div>
+            <div class="c-faux-grid__item"></div>
+            <div class="c-faux-grid__item"></div>
+            <div class="c-faux-grid__item"></div>
+        </div>
+    </div>
 </body>
 </html>
+

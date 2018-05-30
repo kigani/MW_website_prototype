@@ -1,0 +1,23 @@
+.c-blob {
+  position: relative;
+  margin-bottom: 0;
+
+  &__video {
+    display: block;
+    max-width: 100%;
+    filter: sepia(1) hue-rotate(200deg);
+    clip-path: url(#clip);
+  }
+
+  &__mask {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  &__image {
+    clip-path: url(#myClip);
+  }
+}
